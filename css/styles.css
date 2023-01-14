@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #db7f82;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:link, a:visited {
+  color: #db7f82;
+  text-decoration: none;
+}
+
+main {
+  height: 100vh;
+  background-color: #f7f3e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url('../../src/assets/placa.jpg'); */
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: 'Courgette', cursive;
+}
+
+p {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.brujula {
+  width: 56rem;
+  height: 50rem;
+}
+
+.cta-btn {
+  font-size: 2.5rem;
+  border: 0.1rem solid #db7f82;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-bottom: 10rem;
+  padding: 0.5rem;
+  transition: all 0.6s;
+}
+
+.cta-btn:hover {
+  color: #fff;
+  background-color: #db7f82;
+  transform: translateY(-5px);
+  box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0,0,0,0.2);
+}
+
+.insta:visited, .insta:link {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.6s;
+}
+
+.insta:hover {
+  font-size: 2.5rem;
+  transform: translateY(-5px);
+}
+
+.insta:hover svg {
+  transition: all 0.6s;
+}
+
+.insta:hover svg {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.navbar_vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  height: 20rem;
+  width: 25rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navbar li{
+  width: 25rem;
+  padding: 0.5rem;
+  clip-path: polygon(0 0, 90% 0,100% 50%, 90% 100%, 0 100%);
+  transition: all 0.6s;
+}
+
+.navbar li:hover{
+  width: 30rem;
+  background-color: #db7f82;
+}
+
+.navbar_item {
+  color: #db7f82;
+  font-size: 2.5rem;
+  transition: all 0.2s;
+}
+
+.navbar li:hover .navbar_item {
+  color: #fff;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  padding: 0rem 5rem;
+  background-image: url("../assets/fondo-flores.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+video {
+  margin-bottom: 6rem;
+}
+
+.navbar_h_container {
+  margin-bottom: 5rem;
+}
+
+.navbar_horizontal {
+  font-size: 2.5rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.navbar_horizontal li {
+  list-style: none;
+}
+
+.volver-home {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  transition: all 0.8s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volver-home:hover {
+  background-color: #db7f82;
+  box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+}
+
+.volver-home:hover svg polyline{
+  stroke: #fff;
+}
